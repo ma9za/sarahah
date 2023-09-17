@@ -1,4 +1,3 @@
-
 # Sarahah
 
 ## Project Link
@@ -10,48 +9,37 @@
 This project consists of two main PHP files:
 
 1. `index.php`: Manages PHP sessions and connects to an SQLite database.
-2. `cre.php`: Creates a table in the SQLite database.
+2. `cre.php`: Creates a table in the SQLite database and sets up the admin account.
 
-## Installation
+## Installation and Configuration
 
 ### Prerequisites
 
+- Web server with PHP support (e.g., Apache or Nginx)
 - PHP >= 7.0
 - SQLite3
 
 ### Steps
 
-1. Clone the repository.
-   ```
-   git clone https://github.com/ma9za/sarahah.git
-   ```
+1. Download the project files and upload them to your web server.
 
-2. Navigate to the project directory.
+2. Navigate to `cre.php` in your web browser to set up the database.
    ```
-   cd sarahah
+   http://your-domain.com/cre.php
    ```
+   This will create the necessary database and tables.
 
-3. Run `cre.php` to create the necessary database and tables.
-   ```
-   php cre.php
-   ```
+### Add or Update Admin
 
-4. Start the PHP server.
-   ```
-   php -S localhost:8000
-   ```
-
-5. Open `index.php` in your web browser by visiting `http://localhost:8000/index.php`.
-
-## Login Credentials
-
-- Username: Admin
-- Password: 12345
+To add a new admin or update existing admin credentials, edit the following line in `cre.php`:
+```
+$adminQuery = "INSERT OR IGNORE INTO admin (username, password) VALUES ('admin', '123456')";
+```
+Replace `'admin'` and `'123456'` with the desired username and password.
 
 ## Usage
 
-- Use `index.php` to manage your sessions and perform database operations.
-- Run `cre.php` whenever you need to create or update the database tables.
+- Visit `index.php` to manage your sessions and perform database operations.
 
 ## Contributing
 
