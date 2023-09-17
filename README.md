@@ -1,5 +1,9 @@
 
-# Project Title
+# Sarahah
+
+## Project Link
+
+[GitHub Repository](https://github.com/ma9za/sarahah)
 
 ## Description
 
@@ -19,12 +23,12 @@ This project consists of two main PHP files:
 
 1. Clone the repository.
    ```
-   git clone <repository_url>
+   git clone https://github.com/ma9za/sarahah.git
    ```
 
 2. Navigate to the project directory.
    ```
-   cd <project_directory>
+   cd sarahah
    ```
 
 3. Run `cre.php` to create the necessary database and tables.
@@ -38,6 +42,11 @@ This project consists of two main PHP files:
    ```
 
 5. Open `index.php` in your web browser by visiting `http://localhost:8000/index.php`.
+
+## Login Credentials
+
+- Username: Admin
+- Password: 12345
 
 ## Usage
 
