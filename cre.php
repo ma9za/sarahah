@@ -15,6 +15,6 @@ $createAdminTableQuery = 'CREATE TABLE IF NOT EXISTS admin (
 )';
 $db->exec($createAdminTableQuery);
 
-$adminQuery = "INSERT OR IGNORE INTO admin (username, password) VALUES ('2', '1')";
+$adminQuery = "INSERT OR IGNORE INTO admin (username, password) VALUES ('Admin', '12345')";
 $db->exec($adminQuery);
 ?>
